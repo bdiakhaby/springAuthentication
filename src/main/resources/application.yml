@@ -1,0 +1,16 @@
+server:
+  error:
+    include-messages: always
+    include-bindings-errors : always
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/mmkholding09072023
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      format_sql: true
+  main:
+    allow-circular-references: true
